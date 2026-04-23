@@ -35,7 +35,7 @@ export const generatePosts = createAsyncThunk<
       : {}),
   };
 
-  const res = await fetch("https://aiprodproj-production.up.railway.app/generate", {
+  const res = await fetch("https://aiprodproj-production.up.railway.app/api/generate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
